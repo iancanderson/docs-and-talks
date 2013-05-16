@@ -55,7 +55,7 @@ Generally, see the above 4 rules and **be cognizant** of what you are doing
 		<td> limit of ~10,000 threads </td>
 	</tr>
 	<tr>
-		<th> Cached Thread Pool </th>
+		<th> Fixed Thread Pool </th>
 		<td> `executor = Executors.new_fixed_thread_pool(num)` </td>
 		<td> `executor.submit {}` </td>
 		<td> persistent </td>
@@ -63,7 +63,7 @@ Generally, see the above 4 rules and **be cognizant** of what you are doing
 		<td> may block while waiting for available threads </td>
 	</tr>
 	<tr>
-		<th> Fixed Thread Pool </th>
+		<th> Cached Thread Pool </th>
 		<td> `executor = Executors.new_cached_thread_pool` </td>
 		<td> `executor.submit {}` </td>
 		<td> no quantity limit </td>
